@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for NoteBotLM
+# Multi-stage Dockerfile for AskMyNotes
 # Stage 1: Dependencies and build
 FROM node:current-alpine3.23 AS base
 

@@ -29,7 +29,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: notebot-app
+    container_name: askmynotes-app
     ports:
       - "3000:3000"
     env_file:

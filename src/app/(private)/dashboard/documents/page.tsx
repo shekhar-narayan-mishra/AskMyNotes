@@ -141,7 +141,7 @@ export default function DocumentsPage() {
               </div>
               <div>
                 <h1 className="text-base font-semibold text-gray-900 dark:text-white">
-                  NoteBot <span className="text-blue-500">LM</span>
+                  AskMy<span className="text-blue-500">Notes</span>
                 </h1>
               </div>
             </div>

@@ -5,7 +5,6 @@ import { InferenceClient } from "@huggingface/inference";
 import { QdrantClient } from "@qdrant/js-client-rest";
 import { v4 as uuidv4 } from "uuid";
 import { db } from "@/server/db";
-// import { supabase } from "@/lib/supabase";
 
 import { Worker } from "bullmq";
 import IORedis from "ioredis";

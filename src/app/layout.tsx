@@ -8,7 +8,7 @@ import { AppToaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "NoteBot LM",
+  title: "AskMyNotes",
   description: "Your AI Research Assistant",
   icons: {
     icon: [

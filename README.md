@@ -1,11 +1,11 @@
-# 📘 NoteBot LM – AI-Powered Study & Revision Assistant
+# 📘 AskMyNotes – AI-Powered Study & Revision Assistant
 
-NoteBot LM is an intelligent web app designed to help students revise their course materials.
+AskMyNotes is an intelligent web app designed to help students revise their course materials.
 Upload any PDF to generate dynamic quizzes (MCQs, SAQs, LAQs) tailored to the content.
 Engage with an AI tutor that provides RAG-based answers with citations from the source text.
 Track your progress and deepen your understanding for a more effective learning experience.
 
-**🌐 Live Demo:** [Access NoteBot LM](https://www.notebotlm.xyz)
+**🌐 Live Demo:** [Access AskMyNotes](https://www.askmynotes.xyz)
 
 ## ✅ Core Features
 
@@ -47,7 +47,7 @@ Track your progress and deepen your understanding for a more effective learning 
 
 ## Installation & Running Locally
 
-Follow these steps to set up and run NoteBot LM on your local machine:
+Follow these steps to set up and run AskMyNotes on your local machine:
 
 ```bash
 # Clone the repository

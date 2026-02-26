@@ -36,7 +36,7 @@ export default function SignIn() {
 
             <div className="space-y-2">
               <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                NoteBot LM
+                AskMyNotes
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 AI-Powered Research Assistant
@@ -56,7 +56,7 @@ export default function SignIn() {
               onClick={handleGoogleSignIn}
               disabled={isLoading}
               className="flex w-full cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-900"
-              aria-label="Sign in with Google to access NoteBot LM"
+              aria-label="Sign in with Google to access AskMyNotes"
             >
               {isLoading ? (
                 <div className="flex items-center space-x-2">

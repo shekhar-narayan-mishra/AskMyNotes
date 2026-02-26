@@ -1,5 +1,5 @@
 {
-  "name": "notebot_lm",
+  "name": "askmynotes",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -21,8 +21,8 @@
     "preview": "next build && next start",
     "start": "next start",
     "start:production": "concurrently \"npm run worker:prod\" \"npm run start\" --names \"worker,next\" --prefix-colors \"blue,green\"",
-    "docker:build": "docker build -t notebot-lm .",
-    "docker:run": "docker run -p 3000:3000 notebot-lm",
+    "docker:build": "docker build -t askmynotes-app .",
+    "docker:run": "docker run -p 3000:3000 askmynotes-app",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

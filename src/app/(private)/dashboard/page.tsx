@@ -83,7 +83,7 @@ export default function Dashboard() {
               </div>
               <div>
                 <h1 className="text-lg font-bold text-gray-900 dark:text-white">
-                  NoteBot <span className="text-blue-500">LM</span>
+                  AskMy<span className="text-blue-500">Notes</span>
                 </h1>
               </div>
             </div>
