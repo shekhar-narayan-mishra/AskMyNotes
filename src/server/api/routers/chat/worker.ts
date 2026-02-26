@@ -1,7 +1,7 @@
 import type { WorkerOptions } from "bullmq";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { HfInference } from "@huggingface/inference";
+import { InferenceClient } from "@huggingface/inference";
 import { QdrantClient } from "@qdrant/js-client-rest";
 import { v4 as uuidv4 } from "uuid";
 import { db } from "@/server/db";
@@ -15,7 +15,7 @@ interface FileJobData {
   fileId: string;
 }
 
-const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
+const hf = new InferenceClient(process.env.HUGGINGFACE_API_KEY);
 const qdrantClient = new QdrantClient({
   url: process.env.QDRANT_URL,
   apiKey: process.env.QDRANT_API_KEY,
