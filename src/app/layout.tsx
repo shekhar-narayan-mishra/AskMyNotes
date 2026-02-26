@@ -30,6 +30,18 @@ export const metadata: Metadata = {
   },
 };
 
+import { Syne, Space_Grotesk } from "next/font/google";
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
