@@ -6,6 +6,7 @@ import { SessionProvider } from "next-auth/react";
 import { TRPCReactProvider } from "@/trpc/react";
 import { AppToaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
+import { auth } from "@/server/auth";
 
 export const metadata: Metadata = {
   title: "AskMyNotes",
@@ -29,9 +30,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const session = await auth();
+
   return (
     <html lang="en" className="font-sans" suppressHydrationWarning>
       <body>
@@ -41,7 +44,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SessionProvider>
+          <SessionProvider session={session}>
             <TRPCReactProvider>
               {children}
               <AppToaster />
